@@ -1,0 +1,32 @@
+Task 1: Odd or Even
+import java.util.Scanner;
+public class Solution {
+    public static int isEven(int n) {
+        if (n % 2 == 0) {
+            return 2;   // Even
+        } else {
+            return 1;   // Odd
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Read input number
+        int n = sc.nextInt();
+        // Call function and print result
+        System.out.println(isEven(n));
+        sc.close();
+    }
+}
+Program checks whether a number is odd or even.
+
+If the input number is even, output is 2.
+If the input number is odd, output is 1.
+
+Sample Input: 4
+Sample Output: 2
+
+Sample Input: 7
+Sample Output: 1
+
+Sample Input: 0
+Sample Output: 2
